@@ -1,0 +1,52 @@
+.contact { 
+  background-color: rgb(142, 213, 237);
+  padding: 20px; 
+  text-align: center; 
+  color: red; 
+} 
+
+/* hero section css */
+
+.hero { 
+  height: 50vh; 
+  padding: 30px; 
+  background-color: rgb(250, 250, 250); 
+  border: 1px solid black;
+  display: flex; 
+  justify-content: space-around;
+} 
+
+.hero .see { 
+  border-radius: 7px; 
+  font-weight:  bold;  
+  color: white; 
+  padding: 10px; 
+  background-image: linear-gradient(rgb(83, 62, 241) 10%, rgb(254, 98, 217) 90%); 
+} 
+
+.hero #rate { 
+  display: flex; 
+  justify-content: start;
+  gap: 3%; 
+  
+} 
+.hero #rate p { 
+  padding: 4px; 
+  color: rgb(0, 183, 255);
+  height:  70px;
+  border: 1px solid rgb(241, 241, 241);   
+  background-color: rgb(241, 241, 241);  
+  box-sizing: border-box;  
+}
+#rate { 
+  text-align: center; 
+  line-height: 1px;
+}
+
+#breedimg img { 
+  height: 380px;
+  width: auto; 
+  
+}
+
+
