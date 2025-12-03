@@ -17,23 +17,34 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-    console.log(`User connected : ${socket.id}`); 
 
-    socket.on("send_message", (data) => {
-        console.log(data); 
+    console.log(`User connected : ${socket.id}`);
+
+    socket.on("send_message", (data) => {  // iska emit front me 
+        console.log(data);
         // broadcoast to all other clients 
-        socket.broadcast.emit("receive_message ", data); 
-    }); 
+        socket.broadcast.emit("receive_message", data);   // iska on front me
+    });
+
 
     socket.on('disconnect', () => {
-        console.log("User disconnected ", socket.id); 
+        console.log("User disconnected ", socket.id);
     });
-}); 
+});
 
-const port=9000; 
+
+
+
+const port = 9000;
 server.listen(port, () => {
-    console.log(`server is runnig on http localhost ${port}`); 
-}); 
+    console.log(`server is runnig on http://localhost:${port}`);
+});
+
+
+
+
+
+
 
 
 
