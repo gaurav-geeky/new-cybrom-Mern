@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delay</title>
+
+    <script src="jQuery.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#d1").delay("slow").fadeIn();
+                $("#d2").delay("slow").fadeIn();
+                $("#d3").delay(4000).fadeIn();
+                $("#d4").delay(2000).fadeIn();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1> delay method </h1>
+
+    <br> <br>
+    <button> click me </button>
+    <br> <br>
+
+    <div id="d1" style="width: 100px; height: 100px; display: none; background-color: lightgreen;"> </div>
+
+    <div id="d2" style="width: 100px; height: 100px; display: none; background-color: green;"> </div>
+
+    <div id="d3" style="width: 100px; height: 100px; display: none; background-color: orange;"> </div>
+
+    <div id="d4" style="width: 100px; height: 100px; display: none; background-color: yellow;"> </div>
+
+
+</body>
+
+</html>

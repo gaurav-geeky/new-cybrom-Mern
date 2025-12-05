@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "yellow");
+            })
+            $("input").blur(function () {
+                $(this).css("background-color", "white");
+            })
+        })
+    </script>
+
+</head>
+
+<body bgcolor="lightblue">
+
+    enter name <input type="text">
+    <br> <br>
+    enter email <input type="text">
+    <br> <br>
+    enter roll <input type="text">
+    <br> <br>
+    enter salary <input type="text">
+    <br> <br>
+
+</body>
+
+</html>

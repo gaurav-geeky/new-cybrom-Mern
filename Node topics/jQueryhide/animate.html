@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+
+    <script src="jQuery.js"> </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({ height: '300px', width: '300px' , opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', width: '100px', opacity: '0.4' }, "slow");
+                div.animate({ height: '250px', width: '150px', opacity: '0.4' }, "slow");
+                div.animate({ width: '220px', opacity: '0.4' }, "slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>hello fade methods. </h1>
+    <button> start animation</button>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem qui saepe incidunt iusto molestias
+        provident nobis voluptates quas ut odit voluptatum placeat, unde veniam delectus ipsam soluta. Dolor,
+        repudiandae!
+    </p>
+
+    <div style="background: green; height: 100px; width: 100px ; position: absolute;"></div>
+
+</body>
+
+</html>
