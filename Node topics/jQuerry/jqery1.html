@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery harry</title>
+
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            // $('p').click(function () {
+            //     console.log('you  click on p ..', this);
+            // });
+
+            // $('#p2').dblclick(function () {
+            //     console.log("you double click on ", this)
+            // });
+
+            // $('p').mouseenter(function () {
+            //     console.log("you entered  mouseenter on ", this)
+            // });
+
+            // $('h1').hover(function () {
+            //     console.log("your hovered on : ", this);
+            // },
+            //     function () {
+            //         console.log("thanks for coming");
+            //     });
+
+
+            // demo of onmethod; 
+            $('h2').on(
+                {
+                    click: function() {
+                        console.log('thanks for clicking .on h2', this);
+                    }, 
+                    mouseleave: function(){
+                        console.log("mouse leave....")
+                    }
+                }
+
+            )
+
+            // ther are 3 main types of selector in j Query
+
+            // 1. elemtn selector 
+            // 2. id 
+            // 3. class
+
+
+            // events in JQuery 
+            /*
+            Mouseevent =  click, dbclick, mouseenter, mouseleave, 
+            keyboard = keypress, keydown, keyup, 
+            
+            form event = Submit, change, focus, blue 
+            document/ winow event =  load, resize , scroll, unload .  
+            
+            
+            */
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h1> this is h1 tag.. </h1>
+    <h2> this is h2 tag .. </h2>
+    <p> body 1 Lorem ipsum . </p>
+
+    <p id="p2"> # p2 this is my body 2 dolor sit amet. </p>
+
+    <p class="para"> this is my body 3 -- ducimus tempore reiciendis. </p>
+
+    <p> this is my body 4 </p>
+    <p> hellothis is brazil </p>
+    <p class="odd"> Rerum beatae accusamus quidem fugit. </p>
+
+    <p class="odd"> korem Lorem ipsum dolor sit amet consectetur. l </p>
+    <p> ery tutorial: Learn jQuery in one video in Hindi
+        ►Learn JavaScript in One Video - • JavaScript Tutorial
+    </p>
+
+    <button>click me </button>
+</body>
+
+
+<!-- <script src="./myjquery.js"></script> -->
+
+
+
+</html>
+
+<!-- 
+ther are 3 main types of selector in j Query
+ 
+1. elemtn selector 
+2. id 
+3. class
+
+
+-->
+
+<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->

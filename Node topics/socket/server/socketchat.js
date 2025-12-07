@@ -24,7 +24,7 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
-
+// so express ke server me socket ka server chal sake so, pass exp server as (server) parameter in socket Server
 
 
 
